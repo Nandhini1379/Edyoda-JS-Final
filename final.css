@@ -1,0 +1,14 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-test{
+    padding-top: 16px;
+    padding-left: 5%;
+    padding-right:8% ;
+    text-align: center;
+    box-shadow: 0 2px 5px #ccc;
+    box-sizing: border-box;
+}
+.logo{
+    font-size: large;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerse using Vanilla</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <link href="./scss/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="nav_wrapper">
+            <div class="logo">
+                <img src="./assets/Logo.png" />
+            </div>
+            <div class="menu">
+                <ul class="menu_items">
+                    <li class="active"><a href="./index.html">HOME</a></li>
+                    <li><a href="./product.html">SHOP</a></li>
+                    <li><a href="#clothing_section">CLOTHING</a></li>
+                    <li><a href="#accessories_section">ACCESSORIES</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cart_wrapper">
+            <ion-icon name="search-circle-outline"></ion-icon>
+            <span class="cart_icon">
+                <a href="./checkout.html">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span id="cart_count">0</span>
+                </a>
+            </span>
+            <ion-icon name="person-outline"></ion-icon>
+        </div>
+    </header>
+    <section id="slider_banner" class="container">
+        <div class="slider_wrapper fade" data-id="0">
+            <img src="./assets/Banner_image_1.png">
+        </div>
+        <div class="slider_wrapper display_none fade" data-id="1">
+            <img src="./assets/Banner_image_2.png">
+        </div>
+        <div class="slider_wrapper display_none fade" data-id="2">
+            <img src="./assets/Banner_image_3.png">
+        </div>
+        <div class="slider_wrapper display_none fade" data-id="3">
+            <img src="./assets/Banner_image_4.png">
+        </div>
+        <div class="dot_pagination">
+            <span class="dot active" data-id="0"></span>
+            <span class="dot" data-id="1"></span>
+            <span class="dot" data-id="2"></span>
+            <span class="dot" data-id="3"></span>
+        </div>
+    </section>
+    <section id="product_section">
+        <div class="title">
+            <h3>Clothing for Men and Women</h3>
+            <div class="highlighter"></div>
+        </div>
+        <div class="row" id="clothing_section">
+            <!-- <div class="col-1-of-5">
+                <div class="product_image">
+                    <a href="./product.html">
+                        <img src="./assets/Puma-Men-Black-Solid-Sporty-Jacket.webp" />
+                    </a>
+                </div>
+                <div class="product_meta">
+                    <span>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </span>
+                    <h3 class="product_title">Men Navy Blue Solid Sweatshirt</h3>
+                    <p class="product_cat">United Colors of Benetton</p>
+                    <p class="price">Rs 7000</p>
+                    <div class="price_cart">
+                        <button id="add_to_cart">Add to cart</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section id="product_section">
+        <div class="title">
+            <h3>Accessories for Men and Women</h3>
+            <div class="highlighter"></div>
+        </div>
+        <div class="row" id="accessories_section">
+        </div>
+    </section>
+    <div class="added_popup">
+        <p>product added successfully</p>
+    </div>
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="#" class="footer-link">Men Clothing</a>
+            <a href="#" class="footer-link">Women Clothing</a>
+            <a href="#" class="footer-link">Men Accessories</a>
+            <a href="#" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="#" class="footer-link">Zara</a>
+            <a href="#" class="footer-link">Pantaloons</a>
+            <a href="#" class="footer-link">Levis</a>
+            <a href="#" class="footer-link">UCB</a>
+            <a href="#" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="#" class="footer-link">Building 101</p>
+            <p href="#" class="footer-link">Central Avenue</p>
+            <p href="#" class="footer-link">LA - 902722</p>
+            <p href="#" class="footer-link">United States</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/add_to_cart.js"></script>
+</body>
+
+</html>

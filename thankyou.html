@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerse using Vanilla</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="./scss/style.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <nav class="nav_wrapper">
+      <div class="logo">
+        <img src="./assets/Logo.png" />
+      </div>
+      <div class="menu">
+        <ul class="menu_items">
+          <li><a href="./index.html">HOME</a></li>
+          <li>SHOP</li>
+          <li>WOMESN'S</li>
+          <li>MEN'S</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="cart_wrapper">
+      <ion-icon name="search-circle-outline"></ion-icon>
+      <span class="cart_icon">
+        <a href="./checkout.html">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span id="cart_count">0</span>
+        </a>
+      </span>
+      <ion-icon name="person-outline"></ion-icon>
+    </div>
+  </header>
+
+  <div class="container" id="thankyou">
+    <div class="thankyou_wraper">
+      <img src="./assets/white-tick.png" alt="">
+
+    </div>
+    <h3 class="sucess-title">Thank You!</h3>
+    <p class="sucess-des">Your order was placed successfully</p>
+
+  </div>
+  <footer>
+    <div>
+      <p class="footer-heading">Online Store</p>
+      <a href="#" class="footer-link">Men Clothing</a>
+      <a href="#" class="footer-link">Women Clothing</a>
+      <a href="#" class="footer-link">Men Accessories</a>
+      <a href="#" class="footer-link">Women Accessories</a>
+    </div>
+    <div>
+      <p class="footer-heading">Helpful Links</p>
+      <a href="#" class="footer-link">Home</a>
+      <a href="#" class="footer-link">About</a>
+      <a href="#" class="footer-link">Contact</a>
+    </div>
+    <div>
+      <p class="footer-heading">Partners</p>
+      <a href="#" class="footer-link">Zara</a>
+      <a href="#" class="footer-link">Pantaloons</a>
+      <a href="#" class="footer-link">Levis</a>
+      <a href="#" class="footer-link">UCB</a>
+      <a href="#" class="footer-link">+ Many More</a>
+    </div>
+    <div>
+      <p class="footer-heading">Address</p>
+      <p href="#" class="footer-link">Building 101</p>
+      <p href="#" class="footer-link">Central Avenue</p>
+      <p href="#" class="footer-link">LA - 902722</p>
+      <p href="#" class="footer-link">United States</p>
+    </div>
+  </footer>
+
+  <script src="./js/add_to_cart.js"></script>
+
+</body>
+
+</html>
